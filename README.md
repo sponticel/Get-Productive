@@ -8,12 +8,21 @@ Get Productive is the app that will help you get you daily task done. A simple T
 
 ## Wireframes
 
-@@ -17,11 +17,46 @@ Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/u
+![Screen Shot 2021-03-15 at 8 45 19 AM](https://user-images.githubusercontent.com/78226889/111156997-bd127e00-856c-11eb-8537-48c9cd3cb9e3.png)
+![Screen Shot 2021-03-15 at 8 46 39 AM](https://user-images.githubusercontent.com/78226889/111157027-c6034f80-856c-11eb-9d75-41a83b896838.png)
+![Screen Shot 2021-03-15 at 8 50 14 AM](https://user-images.githubusercontent.com/78226889/111157035-c7cd1300-856c-11eb-98e0-7fa6f5ec2679.png)
+![Screen Shot 2021-03-15 at 8 56 48 AM](https://user-images.githubusercontent.com/78226889/111157059-cf8cb780-856c-11eb-8f69-bf54c08e43cc.png)
+![Screen Shot 2021-03-15 at 8 58 55 AM](https://user-images.githubusercontent.com/78226889/111157068-d287a800-856c-11eb-83c7-9f9ea6ceab4b.png)
+![Screen Shot 2021-03-15 at 8 56 14 AM](https://user-images.githubusercontent.com/78226889/111157077-d5829880-856c-11eb-9959-27d5f5b810fc.png)
+
+
+
+##Component Hierarchy
+
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
+https://airtable.com/tblyWOK9OR3rHHRg3/viwrVZBGBA9kE0xOJ?blocks=hide
 
 ```json
 {
@@ -81,11 +90,27 @@ The functionality will then be divided into two separate lists: MVP and PostMVP.
 ## Timeframes
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Proposal | H | 3hrs| 2.5hrs | hrs |
+| Setup AirTable| H | 3hrs| 1.5hrs | hrs |
+| Set Up component file and Get data | H | 3hrs| hrs | hrs |
+| Set up Tasks/Label form | H | 3hrs| hrs | hrs |
+| Task form | H | 3hrs| hrs | hrs |
+| Date form | H | 3hrs| hrs | hrs |
+| Home page | H | 3hrs| hrs | hrs |
+| CSS of Home page | H | 3hrs|  hrs | hrs |
+| CSS of Task page | M | 3hrs| hrs | hrs |
+| Work on icons | L | 3hrs| hrs | hrs |
+| Search for backgound pics| L | 3hrs| hrs | hrs |
+| Improve layout Responsive Design | M | 3hrs| hrs | hrs|
+| Play and test out app | M | 3hrs| hrs | hrs |
+| Total | H | 39 hrs| hrs | hrs |
+
 ## SWOT Analysis
 ### Strengths:
+I ahve a clear picture of what my app should look like. After project 1 i know how to better get started which was my issue for the first project. I also know what lessons to refrences and what subjects I am weak in so I can focus on that early on.
 ### Weaknesses:
+I dont completely understand CRUD and I normally get stuck when setting up my forms on labs so I know I will struggle with this. luckliy because I struggle here I know what i need to refrence to help me.
 ### Opportunities:
+I am able to strengthen the areas where I know I struggle based on past homeworks and labs.
 ### Threats:
+I have a hard time moving on to something else or knowing when I need to ask for help. I usually will continue with the for for hours before realizing that I need to approach the issue in a different way, and its a waste of time. I am aware of this this time arround and will have it in mind when I have an issue.
