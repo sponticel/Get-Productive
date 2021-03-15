@@ -26,8 +26,13 @@ Get Productive is the app that will help you get you daily task done. A simple T
 ####Taskpage Mobile view
 ![Screen Shot 2021-03-15 at 8 56 14 AM](https://user-images.githubusercontent.com/78226889/111158179-1c24c280-856e-11eb-9d32-2bf83a5ea689.png)
 
+####Task Detail Mobile view
+![Screen Shot 2021-03-15 at 1 04 41 PM](https://user-images.githubusercontent.com/78226889/111192058-0c69a600-858f-11eb-9da0-283366b97c42.png)
+
+
 ##Component Hierarchy
-![Screen Shot 2021-03-15 at 9 31 08 AM](https://user-images.githubusercontent.com/78226889/111161179-37dd9800-8571-11eb-867b-b1becf93ba66.png)
+![Screen Shot 2021-03-15 at 12 57 36 PM](https://user-images.githubusercontent.com/78226889/111191200-3373a800-858e-11eb-8742-6be5beb73ba7.png)
+
 
 
 
@@ -43,7 +48,8 @@ https://airtable.com/tblyWOK9OR3rHHRg3/viwrVZBGBA9kE0xOJ?blocks=hide
             "fields": {
                 "label": "personal",
                 "task": "plan week",
-                "date": "2021-03-02T12:00:00.000Z"
+                "date": "2021-03-02T12:00:00.000Z",
+                "completed": true
             },
             "createdTime": "2021-03-15T11:37:02.000Z"
         },
@@ -61,7 +67,8 @@ https://airtable.com/tblyWOK9OR3rHHRg3/viwrVZBGBA9kE0xOJ?blocks=hide
             "fields": {
                 "label": "health",
                 "task": "meal prep",
-                "date": "2021-03-10T17:30:00.000Z"
+                "date": "2021-03-10T17:30:00.000Z",
+                "completed": true
             },
             "createdTime": "2021-03-15T11:37:02.000Z"
         }
@@ -77,10 +84,10 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
--Homescreen for initial setup
--Get and Post users tasks from airTable 
--User able to create or edit Airtable
--User able to delete or rearrange task
+- Homescreen for initial setup
+- Get and Post users tasks from airTable 
+- User able to create or edit Airtable
+- User able to delete or rearrange task
 
 #### POSTMVP
 - Include clickable Homescreen Icons
@@ -118,9 +125,9 @@ The functionality will then be divided into two separate lists: MVP and PostMVP.
 
 ## SWOT Analysis
 ### Strengths:
-I ahve a clear picture of what my app should look like. After project 1 i know how to better get started which was my issue for the first project. I also know what lessons to refrences and what subjects I am weak in so I can focus on that early on.
+I have a clear picture of what my app should look like. After project 1 i know how to better get started which was my issue for the first project. I also know what lessons to refrences and what subjects I am weak in so I can focus on that early on.
 ### Weaknesses:
-I dont completely understand CRUD and I normally get stuck when setting up my forms on labs so I know I will struggle with this. luckliy because I struggle here I know what i need to refrence to help me.
+I dont completely understand CRUD and I normally get stuck when setting up my forms on labs so I know I will struggle with this. luckliy because I struggle here I know what I need to refrence to help me.
 ### Opportunities:
 I am able to strengthen the areas where I know I struggle based on past homeworks and labs.
 ### Threats:
