@@ -7,28 +7,24 @@ Get Productive
 Get Productive is the app that will help you get you daily task done. A simple Task manager that will help you stay organized. Using AirTable and React the user is able to add daily tasks, options will allow the user to set a deadline, rearrange and cross of tasks as you go. The User will also have the ability to further organize these tasks by type such as; Project, Personal, Health or Work.
 
 ## Wireframes
-Homepage Desktop view
+####Homepage Desktop view
 ![Screen Shot 2021-03-15 at 8 50 14 AM](https://user-images.githubusercontent.com/78226889/111157311-1ed2e800-856d-11eb-8a54-0e11f271ae12.png)
 
-Homepage Tablet view
+####Homepage Tablet view
 ![Screen Shot 2021-03-15 at 8 46 39 AM](https://user-images.githubusercontent.com/78226889/111157540-5f326600-856d-11eb-9c69-9067bfc68570.png)
 
 
-Homepage Mobile view
+####Homepage Mobile view
 ![Screen Shot 2021-03-15 at 8 45 19 AM](https://user-images.githubusercontent.com/78226889/111157592-6fe2dc00-856d-11eb-8dcd-6ace16b9b1c8.png)
 
-Taskpage Desktop view
-![Uploading Screen Shot 2021-03-15 at 8.58.55 AM.png…]()
+####Taskpage Desktop view
+![Screen Shot 2021-03-15 at 8 58 55 AM](https://user-images.githubusercontent.com/78226889/111157958-e1bb2580-856d-11eb-9603-8ef93a11e7a5.png)
 
-Taskpage Tablet view
+####Taskpage Tablet view
 ![Screen Shot 2021-03-15 at 8 56 48 AM](https://user-images.githubusercontent.com/78226889/111157738-9f91e400-856d-11eb-9164-871089e30071.png)
 
-Taskpage Mobile view
-![Uploading Screen Shot 2021-03-15 at 8.56.14 AM.png…]()
-
-
-
-
+####Taskpage Mobile view
+![Screen Shot 2021-03-15 at 8 56 14 AM](https://user-images.githubusercontent.com/78226889/111158179-1c24c280-856e-11eb-9d32-2bf83a5ea689.png)
 
 ##Component Hierarchy
 
