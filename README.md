@@ -27,7 +27,7 @@ Get Productive is the app that will help you get you daily task done. A simple T
 ![Screen Shot 2021-03-15 at 8 56 14 AM](https://user-images.githubusercontent.com/78226889/111158179-1c24c280-856e-11eb-9d32-2bf83a5ea689.png)
 
 ####Task Detail Mobile view
-![Screen Shot 2021-03-15 at 1 04 41 PM](https://user-images.githubusercontent.com/78226889/111192058-0c69a600-858f-11eb-9da0-283366b97c42.png)
+![Screen Shot 2021-03-15 at 1 07 20 PM](https://user-images.githubusercontent.com/78226889/111192470-771ae180-858f-11eb-8064-962ee797f33e.png)
 
 
 ##Component Hierarchy
