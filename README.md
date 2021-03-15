@@ -1,11 +1,10 @@
 # Project Overview
 ## Project Name
-The name of your project.
+Get Productive
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and/or functionality.
+Get Productive is the app that will help you get you daily task done. A simple Task manager that will help you stay organized. Using AirTable and React the user is able to add daily tasks, options will allow the user to set a deadline, rearrange and cross of tasks as you go. The User will also have the ability to further organize these tasks by type such as; Project, Personal, Health or Work.
 
 ## Wireframes
 
@@ -20,35 +19,36 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 {
     "records": [
         {
-            "id": "recONRzIUTuZ5lXaF",
+            "id": "recnVKTgFtuDd6HG5",
             "fields": {
-                "author": "Liz Yrineo",
-                "setup": "Why did the tomato turn red?",
-                "punchline": "Because it saw the salad dressing!"
+                "label": "personal",
+                "task": "plan week",
+                "date": "2021-03-02T12:00:00.000Z"
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-03-15T11:37:02.000Z"
         },
         {
-            "id": "rec3oYZ5Tp0AIDsKe",
+            "id": "recuuzWTVrbthN9RX",
             "fields": {
-                "author": "Rachel Moskowitz",
-                "setup": "What did the green grape say to the red grape?",
-                "punchline": "Breathe, idiot, breathe!"
+                "label": "work",
+                "task": "complete analysis",
+                "date": "2021-03-12T00:00:00.000Z"
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-03-15T11:37:02.000Z"
         },
         {
-            "id": "recA34tOaoE1IVeC1",
+            "id": "recZsVXf31niI3GyP",
             "fields": {
-                "author": "Gary Grant",
-                "setup": "How do you make holy water?",
-                "punchline": "You boil the hell out of it!"
+                "label": "health",
+                "task": "meal prep",
+                "date": "2021-03-10T17:30:00.000Z"
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-03-15T11:37:02.000Z"
         }
     ],
-    "offset": "recA34tOaoE1IVeC1"
+    "offset": "recZsVXf31niI3GyP"
 }
+
 ```
 
 ### MVP/PostMVP
@@ -57,25 +57,28 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
-@@ -38,9 +73,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
+-Homescreen for initial setup
+-Get and Post users tasks from airTable 
+-User able to create or edit Airtable
+-User able to delete or rearrange task
+
+#### POSTMVP
+- Include clickable Homescreen Icons
+- Click a drag tasks to rearrange
+- Ability to show crossed out task or completely delete task
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
+| Day      | Deliverable                                | Status   |
+| -------- | ------------------------------------------ | -------- |
+| March 15 | get Proposal Approval and Finish AirTable setup | Incomplete |
+| March 16-17 | Set up components and Post, Get data from AirTable | Incomplete |
+| March 18  |Complete Functionality/ Work on Flow of App | Incomplete |
+| March 19   |  Add Icons work and complete CSS necessities | Incomplete |
+| March 20   | Advanced CSS  and Post MVPs| Incomplete |
+| March 22   | Presentations| Incomplete |
 
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
-
-|  Day | Deliverable | Status
-|---|---| ---|
-@@ -56,7 +89,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
-
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-Time frames are also key in the development cycle.  You have limited time to code all parts of your app.  Your estimates can then be used to evalute possibilities based on time needed and the actual time you have before the app must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add an additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
+## Timeframes
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
