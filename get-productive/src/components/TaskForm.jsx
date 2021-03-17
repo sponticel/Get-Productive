@@ -1,9 +1,9 @@
 
 
 function Taskform(props) {
-  const {task, details, date, completed } = props.label.fields;
+  const {task, details, date, completed } = props.task.fields;
   return (
-    <div>Create your Task List here!
+    <div>
       <h3>{task}</h3>
     </div>
 

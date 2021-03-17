@@ -1,13 +1,13 @@
 
 
-function LabelForm() {
+function Labelform(label) {
+  
   return (
-    
-    <div>Create a new Label for your Task List here!
-     <h3></h3>
+    <div>
+      <h3>{label.fields.label}</h3>
     </div>
 
   )
 }
 
-export default LabelForm;
+export default Labelform;

@@ -4,7 +4,7 @@ import axios from "axios";
 import { Route } from "react-router-dom";
 import { baseURL, config } from "./services";
 import './App.css';
-import LabelForm from "./components/LabelForm";
+// import LabelForm from "./components/LabelForm";
 import TaskForm from "./components/TaskForm";
 
 function App() {
@@ -26,15 +26,15 @@ function App() {
           className="label-container">
           <h3>Choose the label for your task list!</h3>
           {label.map((label) => (
-            // <p>{label.fields.label}</p>
-            <LabelForm key={label.id} label={label} />
+            <p>{label.fields.label}</p>
+            // <LabelForm key={label.id} label={label} />
           ))}
           </div>
       </Route>
       <Route path ="/new">
         <h2>Add a new Task</h2>
         <div className="task-container">
-          {label.filter((task) => (
+          {label.map((task) => (
            <TaskForm key={task.id} task={task} /> 
           ))}
         </div>
