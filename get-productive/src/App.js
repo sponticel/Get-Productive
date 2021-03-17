@@ -6,11 +6,11 @@ import { baseURL, config } from "./services";
 import './App.css';
 
 function App() {
-  // const [task, setTask]
+  const [label, setLabel] = useState([]);
   useEffect(() => {
     const getIt = async () => {
       const resp = await axios.get(baseURL, config);
-      console.log(resp.data.records)
+      setLabel(resp.data.records)
     }
     getIt()
   },[])
@@ -20,6 +20,13 @@ function App() {
       <Navbar />
       <Route exact path="/">
         <h2>Welcome lets GET-PRODUCTIVE!</h2>
+        <div
+          className="label-container">
+          <h3>Choose the label for you task!</h3>
+          {label.map((label) => (
+            <p>{label.fields.label}</p>
+          ))}
+          </div>
       </Route>
       <Route path ="/new">
       <h2>Add a new Task</h2>
