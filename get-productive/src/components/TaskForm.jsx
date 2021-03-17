@@ -5,6 +5,7 @@ function Taskform(props) {
   return (
     <div>
       <h3>{task}</h3>
+      <h4>{date}</h4>
     </div>
 
   )
