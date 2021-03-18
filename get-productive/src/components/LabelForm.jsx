@@ -1,13 +1,13 @@
+import { Link } from "react-router-dom";
 
-
-function Labelform(label) {
+function LabelForm({ label }) {
   
   return (
     <div>
-      <h3>{label.fields.label}</h3>
+      <Link to="/details" >{label.fields.label}</Link>
     </div>
 
   )
 }
 
-export default Labelform;
+export default LabelForm;
