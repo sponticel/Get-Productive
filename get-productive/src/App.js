@@ -13,6 +13,7 @@ function App() {
     const getIt = async () => {
       const resp = await axios.get(baseURL, config);
       setLabel(resp.data.records)
+      console.log(resp.data.records)
     }
     getIt()
   },[])
@@ -26,8 +27,7 @@ function App() {
           className="label-container">
           <h3>Choose the label for your task list!</h3>
           {label.map((label) => (
-            // <p>{label.fields.label}</p>
-            <LabelForm key={label.id} label={label} />
+            <li> <LabelForm key={label.id} label={label} /></li> 
           ))}
           </div>
       </Route>
@@ -35,7 +35,9 @@ function App() {
         <h2>Add a new Task</h2>
         <div className="task-container">
           {label.map((task) => (
-           <TaskForm key={task.id} task={task} /> 
+            <li>
+              <TaskForm key={task.id} task={task} />
+            </li>
           ))}
         </div>
       </Route>
