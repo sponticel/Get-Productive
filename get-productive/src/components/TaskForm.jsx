@@ -6,11 +6,11 @@ import { useState } from "react"
 
 function TaskForm(props) {
   const [task, setTask] = useState("");
-  
+
   return (
     <form onSubmit="">
-      <label htmlFor="">
-        <input type="text" value=" onChange=" />
+      <label htmlFor="task">
+        <input id="task" type="text" value=" onChange=" />
       </label>
     </form>
   )
