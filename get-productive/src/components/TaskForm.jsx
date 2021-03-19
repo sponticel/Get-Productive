@@ -1,26 +1,19 @@
 // Source used for drag and drop feature: https://www.freecodecamp.org/news/how-to-add-drag-and-drop-in-react-with-react-beautiful-dnd/#what-is-drag-and-drop
-import React from "react";
-import { useParams } from "react-router-dom";
+
+import { useState } from "react"
 
 
 
-function Taskform(props) {
-  const params = useParams();
-  console.log(params)
-  // const taskList = props.labels.find((label) => params.name === label.fields.task);
-  // if (!taskList) {
-  //   return <h2> Loading content ...</h2>
-  // }
-
-  // const {task,date} = props.task.fields;
+function TaskForm(props) {
+  const [task, setTask] = useState("");
+  
   return (
-    <div className="main">
-      {/* <h2>{taskList.label}</h2> */}
-      {/* <h3>{task}</h3>
-      <h4>{date}</h4> */}
-    </div>
-
+    <form onSubmit="">
+      <label htmlFor="">
+        <input type="text" value=" onChange=" />
+      </label>
+    </form>
   )
 }
 
-export default Taskform;
+export default TaskForm;

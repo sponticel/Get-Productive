@@ -34,16 +34,6 @@ function App() {
           ))}
           </div>
       </Route>
-      {/* <Route path ="/new">
-        <h2>Add a new Task</h2>
-        <div className="task-container">
-          {label.map((task) => (
-            <li>
-              <TaskForm key={task.id} task={task} />
-            </li>
-          ))}
-        </div>
-      </Route> */}
       <Route path="/tasks/:label">
         <TaskList tasks={tasks}/>
         
