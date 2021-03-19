@@ -5,14 +5,16 @@ import { Route } from "react-router-dom";
 import { baseURL, config } from "./services";
 import './App.css';
 import LabelForm from "./components/LabelForm";
+import TaskList from "./components/TaskList";
 import TaskForm from "./components/TaskForm";
+import Details from "./components/Details";
 
 function App() {
-  const [label, setLabel] = useState([]);
+  const [tasks, setTasks] = useState([]);
   useEffect(() => {
     const getIt = async () => {
       const resp = await axios.get(baseURL, config);
-      setLabel(resp.data.records)
+      setTasks(resp.data.records)
       console.log(resp.data.records)
     }
     getIt()
@@ -26,12 +28,12 @@ function App() {
         <div
           className="label-container">
           <h3>Choose the label for your task list!</h3>
-          {label.map((label) => (
-            <li> <LabelForm key={label.id} label={label} /></li> 
+          {tasks.map((task) => (
+            <li> <LabelForm key={task.id} task={task} /></li>
           ))}
           </div>
       </Route>
-      <Route path ="/new">
+      {/* <Route path ="/new">
         <h2>Add a new Task</h2>
         <div className="task-container">
           {label.map((task) => (
@@ -40,10 +42,15 @@ function App() {
             </li>
           ))}
         </div>
+      </Route> */}
+      <Route path="/tasks/:label">
+        <TaskList tasks={tasks}/>
+        
       </Route>
-      <Route path="/edit/:id">
-        <h2>View or edit Task details!</h2>
+      <Route path="/details/:id">
+        <Details tasks={tasks}/>
       </Route>
+      
     </div>
   );
 }
