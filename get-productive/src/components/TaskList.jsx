@@ -11,11 +11,11 @@ export default function TaskList(props) {
   return (
     <div>
       {filtered.map(task => {
-        
-        return <Link to={`/details/${task.id}`}>
+        return (
+        <Link to={`/details/${task.id}`}>
           <div>{task.fields.task}</div>
-        </Link>
-      })}
+          </Link>
+        )})}
     </div>
   )
 }
