@@ -6,7 +6,7 @@ import { baseURL, config } from "./services";
 import './App.css';
 import LabelForm from "./components/LabelForm";
 import TaskList from "./components/TaskList";
-// import TaskForm from "./components/TaskForm";
+import TaskForm from "./components/TaskForm";
 import Details from "./components/Details";
 
 function App() {

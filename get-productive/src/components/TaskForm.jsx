@@ -6,12 +6,14 @@ import { useState } from "react"
 
 function TaskForm(props) {
   const [task, setTask] = useState("");
+  // const [completed, setCompleted] = useState(False)
 
   return (
     <form onSubmit="">
-      <label htmlFor="task">
-        <input id="task" type="text" value=" onChange=" />
-      </label>
+      <label htmlFor="task">Add a new task: </label>
+      <input id="task" type="text" value={task} onChange={(e)=> setTask(e.target.value)} />
+     
+      
     </form>
   )
 }
