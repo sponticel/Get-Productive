@@ -8,9 +8,11 @@ import LabelForm from "./components/LabelForm";
 import TaskList from "./components/TaskList";
 import TaskForm from "./components/TaskForm";
 import Details from "./components/Details";
+import DetailsForm from "./components/DetailsForm";
 
 function App() {
   const [tasks, setTasks] = useState([]);
+  const [toggleFetch, setToggleFetch] = useState(false)
 
   useEffect(() => {
     const getIt = async () => {
@@ -36,10 +38,11 @@ function App() {
       </Route>
       <Route path="/tasks/:label">
         <TaskList tasks={tasks}/>
-        
+        <TaskForm />
       </Route>
       <Route path="/details/:id">
-        <Details tasks={tasks}/>
+        <Details tasks={tasks} />
+        <DetailsForm />
       </Route>
       
     </div>

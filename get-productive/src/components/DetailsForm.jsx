@@ -1,26 +1,39 @@
 import { useState } from "react"
+import { baseURL, config } from "../services";
+import axios from "axios";
 
-
-function TaskForm(props) {
-  const [detail, setDetail] = useState("");
-  const [date, setDate] = useState("");
-  const [time, setTime] = useState(1);
+function DetailsForm(props) {
+  const [details, setDetails] = useState("");
+  const [date, setDate] = useState(new Date());
+  const [time, setTime] = useState("");
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // console.log(`ganamos2`)
+    const fields = {
+      details,
+      date,
+      time,
+    }
+    await axios.post(baseURL,{fields},config)
+  }
 
   return (
-    <form onSubmit="">
+    <form onSubmit={handleSubmit}>
 
-      <label htmlFor="detail">Add Task Detail: </label>
-        <input id="detail" type="text" value={detail} onChange={(e)=> setDetail(e.target.vaule)} />
+      <label htmlFor="details">New Task detail: </label>
+        <input required id="details" type="textarea" value={details} onChange={(e)=> setDetails(e.target.value)} />
       
 
       <label htmlFor="date">Enter date of task: </label>
-      <input id="date" type="date" value={date} onChange={(e)=> setDate(e.target.valueAsDate)}/>
+      <input required id="date" type="date" value={date} onChange={(e)=> setDate(e.target.valueAsDate)}/>
       
       
       <label htmlFor="time"> Enter time of task</label>
-      <input id="time" type="time" value={time} onChange={(e) => setTime(e.target.value)} />
+      <input required id="time" type="time" value={time} onChange={(e) => setTime(e.target.value)} />
+      <button type="submit">Create</button>
     </form>
   )
 }
 
-export default TaskForm;
+export default DetailsForm;
