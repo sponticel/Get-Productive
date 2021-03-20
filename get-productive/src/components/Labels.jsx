@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function LabelForm(props) {
+function Labels(props) {
   const {label} = props.task.fields
   return (
     <div>
@@ -10,4 +10,4 @@ function LabelForm(props) {
   )
 }
 
-export default LabelForm;
+export default Labels;

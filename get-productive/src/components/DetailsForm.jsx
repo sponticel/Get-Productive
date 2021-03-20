@@ -4,6 +4,7 @@ import axios from "axios";
 
 function DetailsForm(props) {
   const [details, setDetails] = useState("");
+  const [date, setDate] = useState(new Date());
   const [time, setTime] = useState("");
   
   const handleSubmit = async (e) => {
@@ -11,6 +12,7 @@ function DetailsForm(props) {
     // console.log(`ganamos2`)
     const fields = {
       details,
+      date,
       time,
     }
     await axios.post(baseURL,{fields},config)
@@ -22,6 +24,8 @@ function DetailsForm(props) {
         <input required id="details" type="textarea" value={details} onChange={(e)=> setDetails(e.target.value)} />
       <label htmlFor="time"> Enter time of task</label>
       <input required id="time" type="time" value={time} onChange={(e) => setTime(e.target.value)} />
+      <label htmlFor="date">Enter date of task: </label>
+      <input required id="date" type="date" value={date} onChange={(e)=> setDate(e.target.valueAsDate)}/>
       <button type="submit">Create</button>
     </form>
   )

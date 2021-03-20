@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
-import axios from "axios";
 import { Route } from "react-router-dom";
 import { baseURL, config } from "./services";
-import './App.css';
-import LabelForm from "./components/LabelForm";
+import axios from "axios";
+import Navbar from "./components/Navbar";
+import Labels from "./components/Labels";
 import TaskList from "./components/TaskList";
 import TaskForm from "./components/TaskForm";
 import Details from "./components/Details";
 import DetailsForm from "./components/DetailsForm";
+import './App.css';
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -34,18 +34,18 @@ function App() {
         <div className="label-container">
           <h3>Choose the label for your task list!</h3>
           {tasks.map((task) => (
-            <li> <LabelForm key={task.id} task={task} /></li>
+            <li> <Labels key={task.id} task={task} /></li>
           ))}
         </div>
       </Route>
       
       <Route path="/tasks/:label">
-        <TaskList tasks={tasks}/>
+        <li><TaskList tasks={tasks}/></li>
         <TaskForm setToggleFetch={setToggleFetch}/>
       </Route>
 
       <Route path="/details/:id">
-        <Details tasks={tasks} />
+        <li><Details tasks={tasks} /></li>
         <DetailsForm />
       </Route>
     </div>

@@ -13,9 +13,9 @@ export default function Details(props) {
   const newDate = Date(task.fields.date)
   console.log(newDate)
   return (
-    <div>
-      <li><h3>{task.fields.details}</h3></li>
-      <h3>{`Due on ${newDate}`}</h3>
+    <div className="detail">
+      <p>{task.fields.details}</p>
+      <p>{`Due on ${newDate}`}</p>
       <label for="Completed">Completed</label>
       <input type="checkbox" checked={task.fields.completed}/>
     </div>
