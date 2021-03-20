@@ -14,8 +14,9 @@ export default function Details(props) {
   console.log(newDate)
   return (
     <div>
-      <h3>{newDate}</h3>
-      <h2>{task.fields.details}</h2>
+      <li><h3>{task.fields.details}</h3></li>
+      <h3>{`Due on ${newDate}`}</h3>
+      <label for="Completed">Completed</label>
       <input type="checkbox" checked={task.fields.completed}/>
     </div>
   )

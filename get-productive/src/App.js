@@ -18,33 +18,36 @@ function App() {
     const getIt = async () => {
       const resp = await axios.get(baseURL, config);
       setTasks(resp.data.records)
-      console.log(resp.data.records)
+      // console.log(resp.data.records)
     }
     getIt()
-  },[])
+  }, [toggleFetch]);
   // console.log(process.env)
   return (
     <div className="App">
-      <Navbar />
+      <div className="nav">
+        <Navbar />
+      </div>
+    
       <Route exact path="/">
         <h2>Welcome lets GET-PRODUCTIVE!</h2>
-        <div
-          className="label-container">
+        <div className="label-container">
           <h3>Choose the label for your task list!</h3>
           {tasks.map((task) => (
             <li> <LabelForm key={task.id} task={task} /></li>
           ))}
-          </div>
+        </div>
       </Route>
+      
       <Route path="/tasks/:label">
         <TaskList tasks={tasks}/>
-        <TaskForm />
+        <TaskForm setToggleFetch={setToggleFetch}/>
       </Route>
+
       <Route path="/details/:id">
         <Details tasks={tasks} />
         <DetailsForm />
       </Route>
-      
     </div>
   );
 }
