@@ -22,9 +22,9 @@ function DetailsForm(props) {
 
       <label htmlFor="details">New Task detail: </label>
         <input required id="details" type="textarea" value={details} onChange={(e)=> setDetails(e.target.value)} />
-      <label htmlFor="time"> Enter time of task</label>
+      <label htmlFor="time"> Time:</label>
       <input required id="time" type="time" value={time} onChange={(e) => setTime(e.target.value)} />
-      <label htmlFor="date">Enter date of task: </label>
+      <label htmlFor="date">Date: </label>
       <input required id="date" type="date" value={date} onChange={(e)=> setDate(e.target.valueAsDate)}/>
       <button type="submit">Create</button>
     </form>

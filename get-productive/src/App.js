@@ -12,7 +12,7 @@ import './App.css';
 
 function App() {
   const [tasks, setTasks] = useState([]);
-  const [toggleFetch, setToggleFetch] = useState(false)
+  const [toggleFetch, setToggleFetch] = useState(false);
 
   useEffect(() => {
     const getIt = async () => {
@@ -31,22 +31,24 @@ function App() {
     
       <Route exact path="/">
         <h2>Welcome lets GET-PRODUCTIVE!</h2>
-        <div className="label-container">
-          <h3>Choose the label for your task list!</h3>
+        <div className="labels-container">
+          <em><h3>Choose the label for your task list!</h3></em>
           {tasks.map((task) => (
-            <li> <Labels key={task.id} task={task} /></li>
+            <h2><Labels key={task.id} task={task} /></h2>
           ))}
         </div>
       </Route>
       
       <Route path="/tasks/:label">
-        <li><TaskList tasks={tasks}/></li>
-        <TaskForm setToggleFetch={setToggleFetch}/>
+        <div clasName="tasklist">
+          <TaskList tasks={tasks}/>
+          <TaskForm setToggleFetch={setToggleFetch} />
+         </div> 
       </Route>
 
       <Route path="/details/:id">
-        <li><Details tasks={tasks} /></li>
-        <DetailsForm />
+        <Details tasks={tasks} />
+        <DetailsForm setToggleFetch={setToggleFetch}/>
       </Route>
     </div>
   );
