@@ -1,11 +1,23 @@
-import { useState } from "react"
+import { useEffect, useState } from "react";
 import { baseURL, config } from "../services";
+import { useParams } from "react-router-dom";
 import axios from "axios";
 
 function DetailsForm(props) {
   const [details, setDetails] = useState("");
-  const [date, setDate] = useState(new Date());
-  const [time, setTime] = useState("");
+  const [date, setDate] = useState("");
+  const params = useParams();
+
+  // useEffect(() => {
+  //   if (params.id && props.details.length > 0){
+  //     const info= props.info.find((info) => info.id === params.id)
+  //     if (info) {
+  //       setDetails(info.fields.details);
+
+  //     }
+  //   }
+  // }, [props.details, params.id])
+  
   
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -13,20 +25,16 @@ function DetailsForm(props) {
     const fields = {
       details,
       date,
-      time,
     }
-    await axios.post(baseURL,{fields},config)
-  }
-  return (
-    <form onSubmit={handleSubmit}>
+    await axios.post(baseURL, { fields }, config);
+    props.setToggleFetch((curr) => !curr);
+  };
 
-      <label htmlFor="details">New Task detail: </label>
-        <input required id="details" type="textarea" value={details} onChange={(e)=> setDetails(e.target.value)} />
-      <label htmlFor="time"> Time:</label>
-      <input required id="time" type="time" value={time} onChange={(e) => setTime(e.target.value)} />
-      <label htmlFor="date">Date: </label>
-      <input required id="date" type="date" value={date} onChange={(e)=> setDate(e.target.valueAsDate)}/>
-      <button type="submit">Create</button>
+  return (
+
+    <form onSubmit={handleSubmit}>
+      <button>Edit</button>
+      
     </form>
   )
 }

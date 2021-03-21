@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Route } from "react-router-dom";
+import { useParams, Route, Link } from "react-router-dom";
 import { baseURL, config } from "./services";
 import axios from "axios";
 import Navbar from "./components/Navbar";
@@ -8,12 +8,18 @@ import TaskList from "./components/TaskList";
 import TaskForm from "./components/TaskForm";
 import Details from "./components/Details";
 import DetailsForm from "./components/DetailsForm";
+import Footer from "./components/Footer";
 import './App.css';
+
+function nonDupLabel() {
+  
+}
 
 function App() {
   const [tasks, setTasks] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
-
+  const params = useParams();
+  console.log("")
   useEffect(() => {
     const getIt = async () => {
       const resp = await axios.get(baseURL, config);
@@ -36,20 +42,30 @@ function App() {
           {tasks.map((task) => (
             <h2><Labels key={task.id} task={task} /></h2>
           ))}
+          
+          {/* <Link to={`/tasks/:label`}>
+            <h2>Personal</h2>
+            <h2>Work</h2>
+            <h2>Health</h2>
+            <h2>Project</h2>
+            <h2>Errands</h2>
+          </Link> */}
         </div>
       </Route>
       
       <Route path="/tasks/:label">
+        
         <div clasName="tasklist">
-          <TaskList tasks={tasks}/>
-          <TaskForm setToggleFetch={setToggleFetch} />
-         </div> 
+          <TaskList tasks={tasks} setToggleFetch={setToggleFetch}/>
+          <TaskForm setToggleFetch={setToggleFetch}/>
+        </div> 
       </Route>
-
+      {/* <h2>{`Details for ${tasks}`}</h2> */}
       <Route path="/details/:id">
         <Details tasks={tasks} />
-        <DetailsForm setToggleFetch={setToggleFetch}/>
+        <DetailsForm />
       </Route>
+      {/* <Footer /> */}
     </div>
   );
 }
