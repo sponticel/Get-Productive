@@ -1,42 +1,42 @@
-import { useEffect, useState } from "react";
-import { baseURL, config } from "../services";
-import { useParams } from "react-router-dom";
-import axios from "axios";
+// import { useEffect, useState } from "react";
+// import { baseURL, config } from "../services";
+// import { useParams } from "react-router-dom";
+// import axios from "axios";
 
-function DetailsForm(props) {
-  const [details, setDetails] = useState("");
-  const [date, setDate] = useState("");
-  const params = useParams();
+// function DetailsForm(props) {
+//   const [details, setDetails] = useState("");
+//   const [date, setDate] = useState("");
+//   const params = useParams();
 
-  // useEffect(() => {
-  //   if (params.id && props.details.length > 0){
-  //     const info= props.info.find((info) => info.id === params.id)
-  //     if (info) {
-  //       setDetails(info.fields.details);
+//   // useEffect(() => {
+//   //   if (params.id && props.details.length > 0){
+//   //     const info= props.info.find((info) => info.id === params.id)
+//   //     if (info) {
+//   //       setDetails(info.fields.details);
 
-  //     }
-  //   }
-  // }, [props.details, params.id])
+//   //     }
+//   //   }
+//   // }, [props.details, params.id])
   
   
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    // console.log(`ganamos2`)
-    const fields = {
-      details,
-      date,
-    }
-    await axios.post(baseURL, { fields }, config);
-    props.setToggleFetch((curr) => !curr);
-  };
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     // console.log(`ganamos2`)
+//     const fields = {
+//       details,
+//       date,
+//     }
+//     await axios.post(baseURL, { fields }, config);
+//     props.setToggleFetch((curr) => !curr);
+//   };
 
-  return (
+//   return (
 
-    <form onSubmit={handleSubmit}>
-      <button>Edit</button>
+//     <form onSubmit={handleSubmit}>
       
-    </form>
-  )
-}
+      
+//     </form>
+//   )
+// }
 
-export default DetailsForm;
+// export default DetailsForm;

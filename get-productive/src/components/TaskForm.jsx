@@ -1,5 +1,5 @@
 // Source used for drag and drop feature: https://www.freecodecamp.org/news/how-to-add-drag-and-drop-in-react-with-react-beautiful-dnd/#what-is-drag-and-drop
-import { useParams, Link } from "react-router-dom";
+import { useParams} from "react-router-dom";
 import { useState } from "react";
 import { baseURL, config } from "../services";
 import axios from "axios";
