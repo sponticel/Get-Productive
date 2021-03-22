@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
-import { Route, Link } from "react-router-dom";
+import { Route} from "react-router-dom";
 import { baseURL, config } from "./services";
 import axios from "axios";
 import Navbar from "./components/Navbar";
 import TaskList from "./components/TaskList";
 import TaskForm from "./components/TaskForm";
 import Details from "./components/Details";
+import Labels from "./components/Labels";
+import Footer from "./components/Footer";
 import './App.css';
 
 function App() {
@@ -16,11 +18,10 @@ function App() {
     const getIt = async () => {
       const resp = await axios.get(baseURL, config);
       setTasks(resp.data.records)
-      // console.log(resp.data.records)
     }
     getIt()
   }, [toggleFetch]);
-  // console.log(process.env)
+  
   return (
     <div className="App">
       <div className="nav">
@@ -28,37 +29,33 @@ function App() {
       </div>
     
       <Route exact path="/">
-        <h2>Welcome lets GET-PRODUCTIVE!</h2>
+        <h2 id="welcome">Welcome lets GET-PRODUCTIVE!</h2>
         <div className="labels-container">
+          {/* Code for mapping through labels but when adding new task it repeats labels on the Home page */}
           {/* <em><h3>Choose the label for your task list!</h3></em>
           {tasks.map((task) => (
             <h2><Labels key={task.id} task={task} /></h2>
           ))} */}
-          
-          
-          <Link to="/tasks/Personal"><h2>Personal</h2></Link>
-          <Link to="/tasks/Work"><h2>Work</h2></Link>
-          <Link to="/tasks/Health"><h2>Health</h2></Link>
-          <Link to="/tasks/Project"><h2>Project</h2></Link>
-          <Link to="/tasks/Errands"><h2>Errands</h2></Link>
-          
-          
+          <Labels /> 
         </div>
       </Route>
       
       <Route path="/tasks/:label">
         
         <div clasName="tasklist">
-          <TaskList tasks={tasks} setToggleFetch={setToggleFetch}/>
+          <TaskList tasks={tasks} setToggleFetch={setToggleFetch} />
+          <input type="checkbox" id="completed" name="completed" />
+          <label for="completed">Completed</label>
           <TaskForm setToggleFetch={setToggleFetch}/>
         </div> 
       </Route>
-      {/* <h2>{`Details for ${tasks}`}</h2> */}
+  
       <Route path="/details/:id">
+        <h3 className="detailsFont">
         <Details tasks={tasks} setToggleFetch={setToggleFetch}/>
-        {/* <DetailsForm /> */}
+        </h3>
       </Route>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

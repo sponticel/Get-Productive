@@ -1,10 +1,13 @@
-
+import React from "react";
 
 export default function Footer() {
   return (
-    <div>
-      <footer> &#169 Sandy Ponticel </footer>
-    </div>
+    <footer className="footer">
+    <p>© Sandy Ponticel 2021</p>
+  </footer>
   )
 }
+
+
+
 

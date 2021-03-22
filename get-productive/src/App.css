@@ -13,7 +13,7 @@
   background-size: cover;
   width: 100%;
   height: 600px;
-  color: rgb(108, 150, 197);
+  color: rgb(64, 138, 207);
   resize: both;
   text-align: center;
   overflow: scroll;
@@ -27,21 +27,24 @@ padding: 15px;
 .labels-container{
   border-radius: 25px;
   background-color: grey;
-  color: rgb(19, 65, 117);
+  border: 2px solid pink;
+  color: rgb(64, 138, 207);
   width: 300px;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
-  padding: 50px;
+  padding: 30px;
   opacity: 0.9;
+  display: flex;
 
 }
 
 .tasks{
   border-radius: 25px;
   background-color: grey;
-  color: rgb(15, 64, 121);
+  border: 2px solid pink;
+  color: rgb(64, 138, 207);
   width: 300px;
   height: 400px;
   margin-left: auto;
@@ -54,7 +57,7 @@ padding: 15px;
 .detail{
   border-radius: 25px;
   background-color: grey;
-  color: rgb(15, 64, 121);
+  color:rgb(64, 138, 207);
   width: 300px;
   height: 400px;
   margin-left: auto;
@@ -106,5 +109,69 @@ button{
   border: 2px solid pink;
   margin: 8px;
 }
+
+#welcome{
+  margin: 20px;
+  color: rgb(64, 138, 207);
+}
+
+.detailForm {
+  margin: 25px;
+  border: 2px solid pink;
+  color:rgb(64, 138, 207);
+}
+
+
+
+.date{
+  padding: 20px;
+  margin: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .detail{
+    border-radius: 25px;
+    background-color: grey;
+    color:black;
+    width: 300px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    opacity: 0.9;
+    overflow: scroll;
+}
+}
+
+@media only screen and (max-width: 1020px) {
+  .detail{
+    border-radius: 25px;
+    background-color: grey;
+    color:rgb(11, 110, 167);
+    width: 300px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    opacity: 0.9;
+    overflow: scroll;
+}
+.labels-container{
+  border-radius: 25px;
+  background-color: grey;
+  border: 2px solid pink;
+  color: rgb(64, 138, 207);
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  padding: 30px;
+  opacity: 0.9;
+
+}
+
+}
+
 
 

@@ -24,7 +24,7 @@ export default function TaskList(props) {
       {filtered.map(task => {
         return (
           <div className="detail-heading"> 
-            <Link to={`/details/${task.id}`}>
+            <Link to={`/details/${task.id}`} style={{ textDecoration: 'none' }}>
             <li>{task.fields.task}</li>
             </Link>
             <button onClick={()=> remove(task.id)} >Delete</button> 

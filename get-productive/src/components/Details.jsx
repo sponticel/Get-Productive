@@ -31,11 +31,12 @@ export default function Details(props) {
     setEditing(false);
   }
   return (
-    <div className="detail">
+    <div>
       <h1>{`Details for ${foundTask.fields.task}`}</h1>
+      <div className="detail">
     {
       editing ?
-          <form>
+          <form className="detailForm">
             <textarea
               value={details ? details: foundTask.fields.details}
               rows={5}
@@ -45,8 +46,8 @@ export default function Details(props) {
             < input required id="date" type="date"
               value={date ? date: foundTask.fields.date}
               onChange={(e) => setDate(e.target.value)}
-              
-            />
+              />
+            <div></div>
             <button onClick={handleSubmit} type="submit">Submit</button>
             <button onClick={()=> setEditing(false)}>Cancel</button>
         </form >:
@@ -54,14 +55,9 @@ export default function Details(props) {
             <p>{foundTask.fields.details}</p>
             <p>{`Due on ${foundTask.fields.date}`}</p>
             <button onClick={()=> setEditing(true)}>Edit</button>
-            
-      </div>      
-    
-      }
-      
+          </div>      
+    }
+      </div>
   </div>
-   
-  //     <label for="Completed"></label>
-  
-   )
+  )
 }

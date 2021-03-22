@@ -13,11 +13,10 @@ function TaskForm(props) {
   const params = useParams();
   console.log("task form", params.label)
 
-  // const [completed, setCompleted] = useState(False)
   
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log(`ganamos1`)
+    
     const fields = {
       label: params.label,
       task,
@@ -32,13 +31,13 @@ function TaskForm(props) {
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="task"></label>
-      <input required id="task" type="text" placeholder="Enter new task" value={task} onChange={(e) => setTask(e.target.value)} />
+        <input required id="task" type="text" placeholder="Enter new task" value={task} onChange={(e) => setTask(e.target.value)} />
       <label htmlFor="details"></label>
         <input required id="details" type="textarea" placeholder="New task detail" value={details} onChange={(e)=> setDetails(e.target.value)} />
-        <label htmlFor="date"></label>
+      <label htmlFor="date"></label>
         < input required id="date" type="date" value={date} onChange={(e) => setDate(e.target.value)} />
       <button type="submit">New Task</button>
-      </form>
+    </form>
   )
 }
 
