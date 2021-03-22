@@ -2,7 +2,7 @@
 ## Project Name
 Get Productive
 
-https://6058ab43e33c0100079c99cd--sleepy-tesla-324d0c.netlify.app/
+https://6058c18b5fb95600077863cb--sleepy-tesla-324d0c.netlify.app/
 
 ## Project Description
 
