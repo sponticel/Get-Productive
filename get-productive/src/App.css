@@ -151,8 +151,7 @@ button{
     opacity: 0.9;
     overflow: scroll;
     text-align: center;
-    display: flex;
-    align-items: center;
+    
 
 }
 .labels-container{
