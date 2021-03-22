@@ -11,8 +11,6 @@ function TaskForm(props) {
   const [date, setDate] = useState();
 
   const params = useParams();
-  console.log("task form", params.label)
-
   
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,7 +22,6 @@ function TaskForm(props) {
       date,
     }
     await axios.post(baseURL, { fields: fields }, config);
-    console.log(fields)
     props.setToggleFetch((curr) => !curr);
   };
 

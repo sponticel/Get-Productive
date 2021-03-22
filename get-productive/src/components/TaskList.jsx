@@ -28,8 +28,7 @@ export default function TaskList(props) {
             <li>{task.fields.task}</li>
             </Link>
             <button onClick={()=> remove(task.id)} >Delete</button> 
-          </div>
-    
+          </div>  
         )
       })}
       </div>
