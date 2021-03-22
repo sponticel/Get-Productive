@@ -58,15 +58,14 @@ padding: 15px;
   border-radius: 25px;
   background-color: grey;
   color:rgb(64, 138, 207);
-  width: 300px;
+  width: 500px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
   opacity: 0.9;
   overflow: scroll;
-  display: flex;
-  align-items: center;
+  
 }
 
 input[type=text] {
@@ -88,13 +87,6 @@ input[type=textarea]{
 
 }
 
-input[type=time]{
-  text-align: center;
-  width: 50%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
 
 input[type="date"]{
   width: 50%;
@@ -121,6 +113,7 @@ button{
   margin: 25px;
   border: 2px solid pink;
   color:rgb(64, 138, 207);
+  text-align: center;
 }
 
 
@@ -145,7 +138,7 @@ button{
 }
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (min-width: 768px) {
   .detail{
     border-radius: 25px;
     background-color: grey;
@@ -157,6 +150,10 @@ button{
     padding: 20px;
     opacity: 0.9;
     overflow: scroll;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
 }
 .labels-container{
   border-radius: 25px;
