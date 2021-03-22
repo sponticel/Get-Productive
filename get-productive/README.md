@@ -105,27 +105,27 @@ https://airtable.com/tblyWOK9OR3rHHRg3/viwrVZBGBA9kE0xOJ?blocks=hide
 ## Timeframes
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Proposal | H | 3hrs| 2.5hrs | hrs |
-| Setup AirTable| H | 3hrs| 1.5hrs | hrs |
-| Set Up component file and Get data | H | 3hrs| hrs | hrs |
-| Set up Tasks/Label form | H | 3hrs| hrs | hrs |
-| Task form | H | 3hrs| hrs | hrs |
-| Date form | H | 3hrs| hrs | hrs |
-| Home page | H | 3hrs| hrs | hrs |
-| CSS of Home page | H | 3hrs|  hrs | hrs |
-| CSS of Task page | M | 3hrs| hrs | hrs |
-| Work on icons | L | 3hrs| hrs | hrs |
-| Search for backgound pics| L | 3hrs| hrs | hrs |
-| Improve layout Responsive Design | M | 3hrs| hrs | hrs|
-| Play and test out app | M | 3hrs| hrs | hrs |
-| Total | H | 39 hrs| hrs | hrs |
+| Proposal | H | 3hrs| 4.5hrs | 4.5hrs |
+| Setup AirTable| H | 3hrs| 1.5hrs | 1.5hrs |
+| Set Up component file and Get data | H | 3hrs| 16hrs | 16hrs |
+| Set up Tasks/Detail form | H | 3hrs| 8hrs | 8hrs |
+| Task form | H | 3hrs| 16hrs | 16hrs |
+| Detail form | H | 3hrs| 10hrs | 10hrs |
+| Home page | H | 3hrs| 5hrs | 5hrs |
+| CSS of Home page | H | 3hrs|  4hrs | 4hrs |
+| CSS of Task page | M | 3hrs| 4hrs | 4hrs |
+| CSS of Detail page | M | 3hrs| 2hrs | 2hrs |
+| Search for backgound pics| L | 3hrs| 0.5hrs | 0.5hrs |
+| Improve layout Responsive Design | M | 3hrs| 1.5hrs | 1.5hrs|
+| Play and test out app | M | 3hrs| 1hrs | 1hrs |
+| Total | H | 39 hrs| 74hrs | 74hrs |
 
 ## SWOT Analysis
 ### Strengths:
-I have a clear picture of what my app should look like. After project 1 i know how to better get started which was my issue for the first project. I also know what lessons to refrences and what subjects I am weak in so I can focus on that early on.
+I have a clear picture of what my app should look like. After project 1 I know how to better get started which was my issue for the first project. I also know what lessons to refrence and what subjects I am weak in so I can focus on that early on.
 ### Weaknesses:
 I dont completely understand CRUD and I normally get stuck when setting up my forms on labs so I know I will struggle with this. luckliy because I struggle here I know what I need to refrence to help me.
 ### Opportunities:
 I am able to strengthen the areas where I know I struggle based on past homeworks and labs.
 ### Threats:
-I have a hard time moving on to something else or knowing when I need to ask for help. I usually will continue with the for for hours before realizing that I need to approach the issue in a different way, and its a waste of time. I am aware of this this time arround and will have it in mind when I have an issue.
+I have a hard time moving on to something else or knowing when I need to ask for help. I usually will continue with this for hours before realizing that I need to approach the issue in a different way, and its a waste of time. I am aware of this this time arround and will have it in mind when I have an issue.
